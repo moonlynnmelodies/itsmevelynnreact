@@ -1,0 +1,120 @@
+@import '../../styles/variables';
+
+.header {
+  z-index: 999;
+  background-color: transparent;
+  color: white;
+  // padding: 0.7rem;
+  position: fixed;
+  width: 89%;
+
+  .menu-wrapper {
+    position: relative;
+
+    .header-content {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 2.5rem;
+      padding-top: 2rem;
+      // overflow: hidden;
+    }
+  
+    .header-icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+
+      a{
+        color: $third-color;
+      }
+  
+      .single-icon:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    .navbar {
+      font-size: 2.3rem;
+      color: $third-color;
+      cursor: pointer;
+      padding-right: 3rem;
+    }
+
+    .navbar:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.responsive-menu {
+  background-color: $third-color;
+  border-bottom-left-radius: 475px;
+  width: 475px;
+  height: 475px;
+  // margin: 65px 65px 0px 0px;
+
+  position: absolute; // Change from `fixed` to `absolute`
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  display: flex;
+  // justify-content: justify;
+  // padding-top: 70px;
+  padding: 90px 0px 0px 20px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 3rem;
+
+  transition: all 0.3s ease-in-out;
+  animation: anim-jelly 0.8s linear forwards;
+
+
+
+  .close-btn{
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    padding: none;
+
+    li{
+      font-size: 24px;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@keyframes anim-jelly {
+  0% {
+    transform: translate(100px, -80px) scale(0.9);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 0) scale(1.1, 0.9);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+  70% {
+    transform: scale(1.02, 0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

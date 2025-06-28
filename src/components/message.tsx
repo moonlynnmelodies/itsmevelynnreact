@@ -1,0 +1,14 @@
+
+// PascalCasing 
+// Each word starts with an uppercase letter
+// There are no spaces, underscores, or hyphens
+
+function Message() {
+    const name = 'Velynn';
+    if (name) {
+        return <h1>Hello {name}</h1>;
+    }
+    return <h1>Hello World</h1>;
+}
+
+export default Message;

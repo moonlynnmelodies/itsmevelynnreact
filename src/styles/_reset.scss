@@ -1,0 +1,15 @@
+// to "reset" browser default styles so that your design looks consistent across all browsers
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #fff;
+// background-image: url('../public/images/main-bg.jpg');
+
+  color: #333;
+}

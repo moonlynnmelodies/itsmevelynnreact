@@ -1,0 +1,121 @@
+
+@import '../styles/variables';
+
+
+.landing-page {
+    // background-color: #000;
+    color: #000;
+    padding-top: 7rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+
+}
+
+.hero-section {
+    text-align: center;
+
+    .profile-img {
+        height: 200px;
+        margin-bottom: -50px;
+    }
+
+    .hero-name {
+        font-family: 'Kaftus', sans-serif;
+        font-size: 70px;
+        color: $secondary-color;
+    }
+    
+    .hero-desc {
+        font-family: 'Gistesy', cursive;
+        font-size: 5rem;
+        color: $third-color;
+    }
+}
+
+
+.welcome {
+    margin-bottom: -50px;
+}
+
+.float-img {
+    width: 200px; // adjust as needed
+    animation: floatUpDown 2s ease-in-out infinite;
+  }
+  
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); // move up
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  .scroll-to-down{
+    background-color: $primary-color;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    // font-size: 5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-top: 3rem;
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: floatUpDown 2s ease-in-out infinite;
+    cursor: pointer;
+  }
+
+
+
+  .about-section {
+    padding: 1rem;
+    margin-top: 200px;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  justify-content: center;
+
+    .about-img{
+      width: 40%;
+      // object-fit: cover;
+    }
+
+    .about-details-wrapper {
+      // margin-top: 60px;
+      flex: 1;
+      right: 80px;
+
+      .about-title {
+        font-family: 'Kaftus', sans-serif;
+        font-size: 70px;
+        color: $primary-color;
+  
+        span {
+          font-family: 'Gistesy', cursive;
+          font-weight: 700;
+          color: $secondary-color;
+        }
+      }
+
+      .about-desc {
+        width: 90%;
+        text-align: justify;
+      }
+    }
+
+    
+  }
+
+
+  
